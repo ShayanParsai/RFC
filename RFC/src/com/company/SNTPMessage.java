@@ -12,10 +12,9 @@ public class SNTPMessage {
     private double rootDispersion = 0;
     private final byte[] referenceIdentifier = {0, 0, 0, 0};
     private double referenceTimestamp = 0;
-    private double originateTimestamp = 0;
-    private double receiveTimestamp = 0;
-    private final double transmitTimestamp;
-
+    public double originateTimestamp = 0;
+    public double receiveTimestamp = 0;
+    public final double transmitTimestamp;
 
     public SNTPMessage(byte[] buf) {
         byte b = buf[0];
